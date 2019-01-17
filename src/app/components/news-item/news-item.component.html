@@ -1,0 +1,6 @@
+
+  <h4 class="item-title">{{title}}</h4>
+  <img *ngIf="imagePosition === 'top'" [src]="imageSource" alt="Sample Image" class="item-image" />
+<ng-content></ng-content>
+<app-social *ngIf="social"></app-social>
+<img *ngIf="imagePosition === 'bottom'" [src]="imageSource" alt="Sample Image" class="item-image" />

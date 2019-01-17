@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'vetoproof';
+
+  mobileMenu = false;
+
+  mobileClick() {
+      this.mobileMenu = !this.mobileMenu;
+  }
 }
